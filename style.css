@@ -1,0 +1,141 @@
+@font-face {
+    font-family: neon;
+    src: url(./fonts/Neonblitz.ttf);
+}
+@font-face {
+    font-family: handWritting;
+    src: url(./fonts/HarlowSolidPlain.otf);
+}
+
+*{
+    margin: 0;
+}
+
+
+
+/*section 1*/
+.section-1{
+    color: white;
+    font-size: 1rem;
+    height: 100vh;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #010611;
+}
+
+.section-1> .border> h2{
+    font-family: neon;
+    font-size: 6em;
+    color: #AA00F3;
+    font-weight: 300;
+    
+}
+
+.section-1> .border > p{
+    font-family: handWritting;
+    font-size: 1.5em;
+}
+
+.section-1>.border{
+    border-top: solid .4em white;
+    border-bottom: solid .4em white;
+    text-align: right;
+    animation: to-right 500ms ;
+}
+/*section-1*/
+/*section-2*/
+.section-2{
+   background-color: #010611;
+    height: 170vh;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: .2em;
+    padding-top: 2em;
+    width: 100%;
+    color: white;
+}
+
+.section-2> .bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.section-2>.bot>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: white;
+}
+
+.section-2 > .top > h2 {
+    font-family: handWritting;
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.section-2> .bot > img{
+    width: 20%;
+    height: auto;
+}
+
+.section-2 > h3{
+    font-family: neon;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 1em;
+}
+
+.section-2> a >button{
+    cursor: pointer;
+    border: none;
+    width: 15em;
+    height: 5em;
+    background-color: aliceblue;
+    border-radius: 1em;
+    font-family: handWritting;
+    font-weight: 200;
+    transition: 300ms;
+    font-size: 1.5em;
+}
+
+.section-2>a>button:hover{
+    border-radius: 0em 1em 0em 1em;
+    background-color: #be64dc;
+    color: white;
+}
+
+/*section-2*/
+@keyframes to-right {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width:600px) {
+    .section-1, .section-2{
+        font-size: .8rem;
+    }
+
+    .section-2{
+        height: 220vh;
+    }
+    
+    .section-2> .bot{
+        flex-direction: column;
+    }
+    .section-2 > .bot> img{
+        width: 50%;
+        margin-bottom: 2em;
+    }
+}
